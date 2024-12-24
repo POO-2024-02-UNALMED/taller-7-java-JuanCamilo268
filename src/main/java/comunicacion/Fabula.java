@@ -13,7 +13,7 @@ public class Fabula extends Escrito{
     public void setInterpretacion(String interpretacion){this.interpretacion = interpretacion;}
     public void setEnsenanza(String ensenanzas){this.ensenanzas = ensenanzas;}
 
-    public String getInterpretacion(){return interpretacion;}
+    public String interpretacion(){return interpretacion;}
     public String getEnsenanza(){return ensenanzas;}
 }
 
