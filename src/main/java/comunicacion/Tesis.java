@@ -27,4 +27,19 @@ public class Tesis extends Escrito{
     public String getIdea(){return idea;}
     public String getConclusion(){return conclusion;}
     public String getReferencias(){return referencias;}
+
+    public String toString(){
+        return super.getOrigen() + "\n"
+                + super.getTitulo() + "\n"
+                + super.getAutor() + "\n"
+                + super.getPaginas() + "\n"
+                + this.idea + "\n"
+                + argumentos.length + "\n"
+                + this.conclusion + "\n"
+                + this.referencias;
+    }
+
+    public int palabrasTotales(int palabrasPagina){
+        return super.getPaginas() * palabrasPagina * 5;
+    }
 }
