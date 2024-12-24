@@ -19,4 +19,17 @@ public class Periodico extends Escrito{
     public String interpretacion(){return interpretacion;}
     public String getFecha(){return fecha;}
     public String getPrimicia(){return primicia;}
+
+    public String toString(){
+        return super.getOrigen() + "\n"
+                + super.getTitulo() + "\n"
+                + super.getAutor() + "\n"
+                + super.getPaginas() + "\n"
+                + this.fecha + "\n"
+                + this.primicia;
+    }
+
+    public int palabrasTotales(int palabrasPagina){
+        return super.getPaginas() * palabrasPagina * 10;
+    }
 }
