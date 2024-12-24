@@ -2,7 +2,7 @@ package comunicacion;
 
 public class Tesis extends Escrito{
     private String idea;
-    private String[] argumentos;
+    private  static String[] argumentos;
     private String conclusion;
     private String referencias;
     private String interpretacion;
@@ -10,7 +10,7 @@ public class Tesis extends Escrito{
     public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos, String conclusion, String referencias, String interpretacion){
         super(origen, titulo, autor, paginas);
         this.idea = idea;
-        this.argumentos = argumentos;
+        Tesis.argumentos = argumentos;
         this.conclusion = conclusion;
         this.referencias = referencias;
         this.interpretacion = interpretacion;
@@ -22,7 +22,7 @@ public class Tesis extends Escrito{
     public void setConclusion(String conclusion){this.conclusion = conclusion;}
     public void setReferencias(String referencias){this.referencias = referencias;}
 
-    public String getInterpretacion(){return interpretacion;}
+    public String interpretacion(){return interpretacion;}
     public String[] getArgumentos(){return argumentos;}
     public String getIdea(){return idea;}
     public String getConclusion(){return conclusion;}
