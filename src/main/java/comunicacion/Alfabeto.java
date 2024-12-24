@@ -13,4 +13,16 @@ public class Alfabeto extends Pictograma{
 
     public String[] getLetras(){return letras;}
     public String interpretacion(){return interpretacion;}
+
+    public String toString() {
+        String retorno = "";
+        for (int i = 0; i < letras.length; i++) {
+            if (i == letras.length - 1) {
+                retorno += letras[i];
+            } else {
+                retorno += letras[i] + ", ";
+            }
+        }
+        return retorno;
+    }
 }
