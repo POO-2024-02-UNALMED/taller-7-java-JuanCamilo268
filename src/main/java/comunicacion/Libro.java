@@ -19,7 +19,7 @@ public class Libro extends Escrito{
     public void setEditorial(String editorial){this.editorial = editorial;}
     public void setEdicion(String edicion){this.edicion = edicion;}
 
-    public String getInterpretacion(){return interpretacion;}
+    public String interpretacion(){return interpretacion;}
     public String getCo_autor(){return co_autor;}
     public String getEditorial(){return editorial;}
     public String getEdicion(){return edicion;}
