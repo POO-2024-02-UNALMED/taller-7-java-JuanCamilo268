@@ -23,4 +23,17 @@ public class Libro extends Escrito{
     public String getCo_autor(){return co_autor;}
     public String getEditorial(){return editorial;}
     public String getEdicion(){return edicion;}
+
+    public String toString(){
+        return super.getOrigen() + "\n"
+                + super.getTitulo() + "\n"
+                + super.getAutor() + "\n"
+                + super.getPaginas() + "\n"
+                + this.co_autor + "\n"
+                + this.editorial + "\n"
+                + this.edicion;
+    }
+    public int palabrasTotales(int palabrasPagina){
+        return super.getPaginas() * palabrasPagina * 2;
+    }
 }
